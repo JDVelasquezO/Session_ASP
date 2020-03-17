@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Inicio de Sesion</h2>
+
+<div>
+    @using (Html.BeginForm("ValidateData", "Index", FormMethod.Post))
+    {
+        <input type="text" name="username" placeholder="Nombre de usuario" autofocus /><br />
+        <input type="password" name="password" placeholder="Contraseña" /><br />
+        <input type="submit" value="Iniciar Sesion" />
+    }
+</div>
